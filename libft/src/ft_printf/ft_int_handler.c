@@ -6,12 +6,11 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 21:17:42 by mman              #+#    #+#             */
-/*   Updated: 2024/06/11 23:06:49 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
+#include "../../inc/libft.h"
 long long	ft_numlen(long n, int base)
 {
 	unsigned long long	count;

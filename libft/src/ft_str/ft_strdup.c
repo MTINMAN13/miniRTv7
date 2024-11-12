@@ -6,12 +6,11 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 15:59:40 by mman              #+#    #+#             */
-/*   Updated: 2023/10/28 21:55:52 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
+#include "../../inc/libft.h"
 char	*ft_strdup(const char *str)
 {
 	char	*dupe;

@@ -6,12 +6,11 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 22:11:33 by mman              #+#    #+#             */
-/*   Updated: 2024/01/13 17:37:09 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
+#include "../../inc/libft.h"
 static size_t	ft_countword(char const *s, char c)
 {
 	size_t	count;

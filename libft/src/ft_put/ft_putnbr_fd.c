@@ -6,12 +6,11 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 22:13:47 by mman              #+#    #+#             */
-/*   Updated: 2023/10/28 21:55:42 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
+#include "../../inc/libft.h"
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	b;

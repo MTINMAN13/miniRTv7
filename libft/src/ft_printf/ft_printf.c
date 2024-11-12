@@ -6,12 +6,11 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 23:06:20 by apple             #+#    #+#             */
-/*   Updated: 2023/11/20 21:17:52 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
+#include "../../inc/libft.h"
 int	ft_putcharo(int c)
 {
 	write(1, &c, 1);

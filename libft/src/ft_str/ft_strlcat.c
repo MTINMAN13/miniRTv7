@@ -6,13 +6,12 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:49:44 by mman              #+#    #+#             */
-/*   Updated: 2023/10/28 21:55:58 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
-#include "libft.h"
-
+#include "../../inc/libft.h"
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	srclen;

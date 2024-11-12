@@ -6,13 +6,12 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 16:14:14 by mman              #+#    #+#             */
-/*   Updated: 2023/10/28 21:56:08 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "libft.h"
-
+#include "../../inc/libft.h"
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;

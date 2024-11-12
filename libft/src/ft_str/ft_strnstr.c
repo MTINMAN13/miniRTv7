@@ -6,13 +6,12 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 15:41:29 by mman              #+#    #+#             */
-/*   Updated: 2023/10/28 21:56:06 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
-#include "libft.h"
-
+#include "../../inc/libft.h"
 // locates first occurrence of null terminated string little in string big
 // where no more than len characters are searched (not searched after a '\0')
 

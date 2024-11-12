@@ -6,15 +6,14 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 21:17:45 by mman              #+#    #+#             */
-/*   Updated: 2023/11/20 21:17:46 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // the function returns the amount of printed characters
 // the function prints the pointer to passed argument
 
-#include "libft.h"
-
+#include "../../inc/libft.h"
 int	ft_handle_x_ptr(unsigned long long num)
 {
 	int		count;

@@ -6,7 +6,7 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 21:17:38 by mman              #+#    #+#             */
-/*   Updated: 2023/11/20 21:22:43 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@
 
 // the function returns the total amount of "written" characters
 
-#include "libft.h"
-
+#include "../../inc/libft.h"
 int	ft_hex_len(unsigned	long num)
 {
 	unsigned long	len;

@@ -6,13 +6,12 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 17:24:00 by mman              #+#    #+#             */
-/*   Updated: 2023/10/28 21:56:00 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
-#include "libft.h"
-
+#include "../../inc/libft.h"
 // return total length of the string we tried to cre8
 // aka max length of src
 
