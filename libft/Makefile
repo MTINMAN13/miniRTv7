@@ -61,7 +61,7 @@ FTPTF		=	ft_hex_handler ft_int_handler ft_pointer_handler \
 				ft_print_handlers ft_printf ft_pntf
 
 FTT_DIR	=	ft_tab/
-FTT		=	ft_freetab
+FTT		=	ft_freetab ft_tablen
 
 SRC_FILES+=$(addprefix $(FTIS_DIR),$(FTIS))
 SRC_FILES+=$(addprefix $(FTMEM_DIR),$(FTMEM))
