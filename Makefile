@@ -69,6 +69,19 @@ SRC			:= $(addprefix $(SRCDIR)/, $(SRC))
 OBJ			:= $(patsubst $(SRCDIR)/%.c, $(OBJDIR)/%.o, $(SRC))
 NAME		:= miniRT
 
+# Colors
+GREEN		:= \033[32;1m
+YELLOW		:= \033[33;1m
+RED			:= \033[31;1m
+BLUE		:= \033[34;1m
+RESET		:= \033[0m
+
+# Symbols
+INFO		:= $(BLUE)ℹ$(RESET)
+SUCCESS		:= $(GREEN)✓$(RESET)
+WARNING		:= $(YELLOW)⚠$(RESET)
+ERROR		:= $(RED)✗$(RESET)
+
 all: $(NAME)
 
 $(LIBFT): $(LIBFTDIR)
@@ -85,29 +98,38 @@ $(MLXDIR):
 	git clone https://github.com/codam-coding-college/MLX42.git $@
 
 $(OBJDIR):
-	mkdir $(OBJDIR);
-	mkdir $(OBJDIR)/parser;
-	mkdir $(OBJDIR)/raytracer;
-	mkdir $(OBJDIR)/graphics;
-	mkdir $(OBJDIR)/clean;
-	mkdir $(OBJDIR)/math;
-	mkdir $(OBJDIR)/save_scene;
+	@printf "$(INFO) Creating directories...\\n"
+	@mkdir -p $(OBJDIR)
+	@mkdir -p $(OBJDIR)/parser
+	@mkdir -p $(OBJDIR)/raytracer
+	@mkdir -p $(OBJDIR)/graphics
+	@mkdir -p $(OBJDIR)/clean
+	@mkdir -p $(OBJDIR)/math
+	@mkdir -p $(OBJDIR)/save_scene
+	@printf "$(SUCCESS) Directories created\\n"
 
 $(NAME): $(LIBFT) $(MLX) $(OBJDIR) $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) $(LIBS) $(HEADERS) -o $@
+	@printf "$(INFO) Linking $(NAME)...\\n"
+	@$(CC) $(CFLAGS) $(OBJ) $(LIBS) $(HEADERS) -o $@
+	@printf "$(SUCCESS) $(NAME) ready!\\n"
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c $(INCDIR)/miniRT.h
-	$(CC) -DCORES=$(NUM_CORES) $(CFLAGS) -c $< $(HEADERS) -o $@
-
+	@printf "$(YELLOW)Compiling$(RESET) $<...\\r"
+	@$(CC) -DCORES=$(NUM_CORES) $(CFLAGS) -c $< $(HEADERS) -o $@
+	@printf "$(SUCCESS) Compiled $<                                                    \\n"
 clean:
-	$(MAKE) clean -C $(LIBFTDIR)
-	rm -f $(OBJ)
+	@printf "$(INFO) Cleaning object files...\\n"
+	@$(MAKE) clean -C $(LIBFTDIR) >/dev/null
+	@rm -f $(OBJ)
+	@printf "$(SUCCESS) Clean complete\\n"
 
 fclean: clean
-	$(MAKE) fclean -C $(LIBFTDIR)
-	rm -rf $(MLXDIR)
-	rm -rf $(OBJDIR)
-	rm -f $(NAME)
+	@printf "$(INFO) Removing all generated files...\\n"
+	@$(MAKE) fclean -C $(LIBFTDIR) >/dev/null
+	@rm -rf $(MLXDIR)
+	@rm -rf $(OBJDIR)
+	@rm -f $(NAME)
+	@printf "$(SUCCESS) Full clean complete\\n"
 
 re: fclean all
 
