@@ -6,7 +6,7 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 14:06:49 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 15:16:46 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 16:45:23 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ void	ft_mousefunc(mouse_key_t button, action_t action, \
 		if (x < 0 || x > minirt->mlx->width || y < 0 || y > minirt->mlx->height)
 			return ;
 		compute_camera_ray(minirt, x, y, &ray);
-		compute_ray_object_intersection(minirt, &ray);
+		ft_compute_ray_object_intersection(minirt, &ray);
 		if (ray.object)
 		{
 			minirt->mode = MODE_OBJECT;

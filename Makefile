@@ -6,7 +6,7 @@
 #    By: mman <mman@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/15 15:03:37 by mman              #+#    #+#              #
-#    Updated: 2024/11/16 15:19:01 by mman             ###   ########.fr        #
+#    Updated: 2024/11/16 16:45:35 by mman             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,14 +54,14 @@ SRC			:= main.c \
 				parser/parser_real.c \
 				parser/parser_utils.c \
 				parser/parser.c \
-				raytracer/anti_alias.c \
-				raytracer/compute_color_utils.c \
-				raytracer/compute_color.c \
-				raytracer/compute_rays.c \
-				raytracer/cyl_utils.c \
-				raytracer/cyl.c \
-				raytracer/intersections.c \
-				raytracer/raytracer.c \
+				ft_raytracer/anti_alias.c \
+				ft_raytracer/compute_color_utils.c \
+				ft_raytracer/compute_color.c \
+				ft_raytracer/compute_rays.c \
+				ft_raytracer/cyl_utils.c \
+				ft_raytracer/cyl.c \
+				ft_raytracer/intersections.c \
+				ft_raytracer/ft_raytracer.c \
 				save_scene/save_scene.c \
 				save_scene/save_scene_utils.c \
 				save_scene/write_object.c
@@ -101,7 +101,7 @@ $(OBJDIR):
 	@printf "$(INFO) Creating directories...\\n"
 	@mkdir -p $(OBJDIR)
 	@mkdir -p $(OBJDIR)/parser
-	@mkdir -p $(OBJDIR)/raytracer
+	@mkdir -p $(OBJDIR)/ft_raytracer
 	@mkdir -p $(OBJDIR)/graphics
 	@mkdir -p $(OBJDIR)/clean
 	@mkdir -p $(OBJDIR)/math

@@ -6,7 +6,7 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 15:16:59 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 15:18:02 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 16:45:23 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ int	compute_color(t_minirt *minirt, t_ray *camera)
 	while (spotlights)
 	{
 		compute_light_ray(camera, spotlights, &light);
-		compute_ray_object_intersection(minirt, &light);
+		ft_compute_ray_object_intersection(minirt, &light);
 		if (light.object == camera->object)
 		{
 			compute_diffuse(&color, spotlights, camera, &light);

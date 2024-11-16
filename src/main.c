@@ -6,7 +6,7 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 13:16:59 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 15:18:54 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 16:47:01 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ static void	graphics_wrapper(t_minirt *minirt)
 		exit_minirt(minirt, "MLX failed\n", EXIT_FAILURE);
 	}
 	mlx_loop_hook(mlx, &ft_hook, minirt);
-	mlx_loop_hook(mlx, &raytracer, minirt);
+	mlx_loop_hook(mlx, &ft_raytracer, minirt);
 	mlx_mouse_hook(mlx, &ft_mousefunc, minirt);
 	mlx_resize_hook(mlx, &ft_resizefunc, minirt);
 	mlx_loop(mlx);

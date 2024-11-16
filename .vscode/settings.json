@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "cstdlib": "c",
+        "optional": "cpp",
+        "memory": "cpp",
+        "functional": "cpp",
+        "iosfwd": "cpp",
+        "span": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "typeinfo": "cpp",
+        "ranges": "cpp"
+    }
+}

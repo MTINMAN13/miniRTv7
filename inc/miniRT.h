@@ -6,7 +6,7 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 13:20:59 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 15:22:39 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 16:45:35 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -212,7 +212,7 @@ int			is_color(t_build *build, char *str);
 int			is_vector(t_build *build, char *str);
 int			is_in_range(t_real value, t_real min, t_real max);
 
-/*	RAYTRACER		*/
+/*	ft_raytracer		*/
 /*	anti_alias.c	*/
 int			anti_alias(t_minirt *minirt, uint32_t x, uint32_t y);
 /*	color utils		*/
@@ -242,11 +242,11 @@ void		compute_cyl_intersection(t_ray *ray, t_object *cyl);
 void		compute_plane_intersection(t_ray *ray, t_object *plane);
 void		compute_sphere_intersection(t_ray *ray, t_object *sphere);
 void		compute_disk_intersection(t_ray *ray, t_object *disk);
-/*	raytracer.c		*/
+/*	ft_raytracer.c		*/
 void		compute_viewport(t_minirt *minirt);
-void		compute_ray_object_intersection(t_minirt *minirt, t_ray *ray);
+void		ft_compute_ray_object_intersection(t_minirt *minirt, t_ray *ray);
 void		*init_thread(void *param);
-void		raytracer(void *param);
+void		ft_raytracer(void *param);
 
 /*	CLEAN		*/
 /*	clean.c		*/

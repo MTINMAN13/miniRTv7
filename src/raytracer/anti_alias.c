@@ -6,7 +6,7 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 15:16:59 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 15:26:09 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 16:45:23 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	anti_alias(t_minirt *minirt, uint32_t x, uint32_t y)
 			compute_camera_ray(minirt, (t_real)x + (t_real)j
 				/ (2 * (minirt->antialias + 1)), (t_real)y
 				+ (t_real)i / (2 * (minirt->antialias + 1)), &camera_ray);
-			compute_ray_object_intersection(minirt, &camera_ray);
+			ft_compute_ray_object_intersection(minirt, &camera_ray);
 			color = compute_color(minirt, &camera_ray);
 			set_rgb_array(a, get_r(color), get_g(color), get_b(color));
 		}
