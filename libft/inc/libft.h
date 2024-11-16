@@ -6,7 +6,7 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 17:18:00 by mman              #+#    #+#             */
-/*   Updated: 2024/06/11 21:05:30 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 15:30:29 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,17 +104,17 @@ void	update_buffer(char *buffer);
 /*	ft_printf	*/
 int		ft_printf(const char *format, ...);
 
-void				ft_handle_x(unsigned int num, const char format);
-int					ft_printfhandler(va_list input, const char type);
-void				ft_handle_x(unsigned int num, const char format);
-int					ft_print_hex(unsigned int num, const char format);
-int					ft_hex_len(unsigned long num);
-void				ft_print_u(long n);
-int					ft_handle_u(unsigned int n);
-int					ft_handle_di(int i);
-int					ft_print_pointer(void *hi);
-int					ft_print_percent(void);
-int					ft_handle_s(char *string);
-int					ft_handle_c(int whatever);
+void	ft_handle_x(unsigned int num, const char format);
+int		ft_printfhandler(va_list input, const char type);
+void	ft_handle_x(unsigned int num, const char format);
+int		ft_print_hex(unsigned int num, const char format);
+int		ft_hex_len(unsigned long num);
+void	ft_print_u(long n);
+int		ft_handle_u(unsigned int n);
+int		ft_handle_di(int i);
+int		ft_print_pointer(void *hi);
+int		ft_print_percent(void);
+int		ft_handle_s(char *string);
+int		ft_handle_c(int whatever);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 13:16:59 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 15:18:50 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 15:29:31 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 static void	write_direction(int fd, t_object *object)
 {
 	int	ret;
+
 	ret = write(fd, " ", 1);
 	if (ret == -1)
 		return ;
@@ -24,13 +25,14 @@ static void	write_direction(int fd, t_object *object)
 static void	write_radius(int fd, t_object *object)
 {
 	int	ret;
+
 	ft_putreal(fd, object->radius * 2);
 	ret = write(fd, " ", 1);
 	if (ret == -1)
 		return ;
 }
 
-void	write_object(int fd, t_object *object)
+static void	write_object_type_and_specs(int fd, t_object *object)
 {
 	int	ret;
 
@@ -48,6 +50,16 @@ void	write_object(int fd, t_object *object)
 	ret = write(fd, " ", 1);
 	if (object->type != PLANE)
 		write_radius(fd, object);
+	if (ret == -1)
+		return ;
+}
+
+void	write_object(int fd, t_object *object)
+{
+	int	ret;
+
+	ret = 0;
+	write_object_type_and_specs(fd, object);
 	if (object->type == CYLINDER)
 	{
 		ft_putreal(fd, object->height);

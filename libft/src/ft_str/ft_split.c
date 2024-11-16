@@ -6,12 +6,11 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 22:11:33 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 14:57:38 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 15:32:15 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
 
 static size_t	ft_wordlen(const char *s, const char c)
 {

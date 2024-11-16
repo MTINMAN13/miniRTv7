@@ -6,7 +6,7 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 13:20:59 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 15:19:25 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 15:22:39 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,13 +47,15 @@
 
 typedef float	t_real;
 
-typedef enum e_key_mode{
+typedef enum e_key_mode
+{
 	MODE_CAMERA,
 	MODE_OBJECT,
 	MODE_SPOT,
 }	t_key_mode;
 
-typedef enum e_identifier{
+typedef enum e_identifier
+{
 	AMBIENT,
 	CAMERA,
 	LIGHT,
@@ -70,12 +72,14 @@ typedef struct s_vec3
 	t_real	z;
 }	t_vec3;
 
-typedef struct s_ambient {
+typedef struct s_ambient
+{
 	t_real		ratio;
 	int			color;
 }	t_ambient;
 
-typedef struct s_spotlight {
+typedef struct s_spotlight
+{
 	t_vec3				source;
 	int					color;
 	t_real				diffuse;
@@ -83,7 +87,8 @@ typedef struct s_spotlight {
 	struct s_spotlight	*next;
 }	t_spotlight;
 
-typedef struct s_camera{
+typedef struct s_camera
+{
 	t_vec3		viewpoint;
 	t_vec3		direction;
 	t_real		fov;
@@ -96,7 +101,8 @@ typedef struct s_camera{
 }	t_camera;
 
 /// @brief Any object: cylinder, plane, or sphere
-typedef struct s_object{
+typedef struct s_object
+{
 	t_identifier	type;
 	t_vec3			center;
 	int				color;
@@ -110,7 +116,8 @@ typedef struct s_object{
 }	t_object;
 
 /// @brief A camera ray or light ray
-typedef struct s_ray {
+typedef struct s_ray
+{
 	t_vec3		origin;
 	t_vec3		direction;
 	t_real		intersection;
@@ -207,7 +214,7 @@ int			is_in_range(t_real value, t_real min, t_real max);
 
 /*	RAYTRACER		*/
 /*	anti_alias.c	*/
-int	anti_alias(t_minirt *minirt, uint32_t x, uint32_t y);
+int			anti_alias(t_minirt *minirt, uint32_t x, uint32_t y);
 /*	color utils		*/
 int			scale_color(int c, t_real scale);
 int			alpha_shade(int c1, int c2, t_real alpha);

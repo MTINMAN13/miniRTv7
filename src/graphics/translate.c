@@ -6,10 +6,11 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 14:06:49 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 15:16:54 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 15:26:23 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "miniRT.h"
 
 static t_vec3	translate(t_vec3 *position, t_vec3 *direction, t_real scale)
 {

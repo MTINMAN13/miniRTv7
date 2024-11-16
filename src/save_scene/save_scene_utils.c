@@ -6,7 +6,7 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 15:16:59 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 15:18:34 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 15:31:20 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ void	ft_putcolor(int fd, int color)
 void	ft_putvector(int fd, t_vec3 vec)
 {
 	int	ret;
+
 	ft_putreal(fd, vec.x);
 	ret = write(fd, ",", 1);
 	ft_putreal(fd, vec.y);

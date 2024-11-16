@@ -6,10 +6,11 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 15:16:59 by mman              #+#    #+#             */
-/*   Updated: 2024/11/16 15:17:57 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 15:26:09 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "miniRT.h"
 
 static void	set_rgb_array(int rgb[3], int r, int g, int b)
 {

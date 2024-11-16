@@ -6,12 +6,13 @@
 /*   By: mman <mman@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 16:15:50 by mman              #+#    #+#             */
-/*   Updated: 2024/11/12 01:09:07 by mman             ###   ########.fr       */
+/*   Updated: 2024/11/16 15:31:52 by mman             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // checks if it is equivalent to alphanumeric character
 #include "../../inc/libft.h"
+
 int	ft_isalnum(int c)
 {
 	if (((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
